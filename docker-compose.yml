@@ -8,9 +8,9 @@ services:
     stdin_open: true
     environment:
       DISPLAY: $DISPLAY
-      HOME: /home
+      HOME: /home/pkg
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
       - ~/.Xauthority:/root/.Xauthority
-      - ./home:/home
+      - ./pkg:/home/pkg
     network_mode: "host"

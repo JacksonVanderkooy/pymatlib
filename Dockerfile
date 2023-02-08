@@ -17,5 +17,3 @@ RUN pip install \
 
 RUN apt-get install -y \
     python3-tk
-
-RUN usermod -d /home root
