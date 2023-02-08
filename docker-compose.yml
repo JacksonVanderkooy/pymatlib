@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  root:
+    build: .
+    command: bash
+    tty: true
+    stdin_open: true
+    environment:
+      DISPLAY: $DISPLAY
+      HOME: /home
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ~/.Xauthority:/root/.Xauthority
+      - ./home:/home
+    network_mode: "host"
