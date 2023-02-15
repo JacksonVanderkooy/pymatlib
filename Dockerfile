@@ -13,7 +13,7 @@ RUN pip install \
     control \
     numpy \
     scipy \
-    matplotlib
+    matplotlib 
 
 RUN apt-get install -y \
     python3-tk
